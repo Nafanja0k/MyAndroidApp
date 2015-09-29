@@ -4,17 +4,16 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		System.out.println("Hello World!");
+		// products - список об'єктів класу Product
+		ArrayList<Product> products = new ArrayList<Product>();
+		// Створюємо кошик myCart
+		Cart myCart = new Cart("myCart");
+		
+		// Заповнюємо список продуктів
+		FillProducts.fill(products);
+		
+		//myCart.addToCart();
 
-		Scanner input = new Scanner(System.in);
 
-		System.out.print("Enter a number: ");
-		double number1 = input.nextDouble();
-
-		System.out.print("Enter second number: ");
-		double number2 = input.nextDouble();
-
-		double product = number1 * number2;
-		System.out.printf("The product of both numbers is: %f", product);
 	}
 }
