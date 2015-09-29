@@ -12,10 +12,7 @@ import java.util.*;public class Cart
 	}
 
 	public void addToCart(int id, int productId, double quantity, double price){
-		this.id = id;
-		this.productId = productId;
-		this.quantity = quantity;
-		this.price = price;
+		this.orders.add(new Order(id, productId, quantity, price));
 	}
 	
 	public void removeFromCart(){
