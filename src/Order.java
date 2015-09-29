@@ -1,12 +1,11 @@
 public class Order
 {
-	public int id;
+
 	public int productId;
 	public double quantity;
 	public double price;
 	
-	public Order(int id, int productId, double quantity, double price){
-		this.id = id;
+	public Order(int productId, double quantity, double price){
 		this.productId = productId;
 		this.quantity = quantity;
 		this.price = price;
