@@ -29,8 +29,10 @@ public class Product
 		
 	}
 	
-	public String getProduct(int product_id){
-		//Вертаємо стрічкою згенерований номер товару 
-		return this.group + "." +this.subGroup + "." + this.id;
+	public void getProduct(int product_id){
+		
+		System.out.println(this.group + "." +this.subGroup + "." + this.id);
+		System.out.println(this.name);
 	};
+	
 }
