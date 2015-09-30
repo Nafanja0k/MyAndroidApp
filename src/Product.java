@@ -6,7 +6,8 @@ abstract public class Product
 	protected name;
 	
 	public void Product(String name, double inPrice){
-
+		this.name = name;
+		this.inPrice = inPrice;
 	};
 	
 	abstract public getPrice();
