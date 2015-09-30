@@ -13,7 +13,7 @@ public class Main
 		FillProducts.fill(products);
 		
 		ConsoleMenu.mainMenu();
-		
+		/*
 		String inString;
 		Scanner sc = new Scanner(System.in);
 		inString = sc.next();
@@ -35,9 +35,11 @@ public class Main
 					break;
 					}
 			}
-		
+		*/
 		for (Product item : products) {
-			System.out.println(item.getId() + " - " + item.getPrice());
+			System.out.println(item.getId() + " - " + item.getName());
+			System.out.println("Вх. ціна: " + item.getInPrice() + " націнка :" + item.getMargin() + " роздрібна ціна: " + item.getPrice());
+			System.out.println("--------");
 		}
 		//myCart.addToCart();
 
