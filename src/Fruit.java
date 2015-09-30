@@ -8,10 +8,16 @@ public class Fruit extends Food {
 	// унікальний номер товару
 	private int id;
 	
-	public Fruit(String name) {
-		// TODO Auto-generated constructor stub
+	public Fruit(String name, double inPrice) {
+		// хочу чтоб вызывался конструктор родительского класо,
+		// но получаю ошибку
+		//super(name,inPrice);
+		
+		// суперкласс  Product має статичну змінну 
+		// для підрахунку порядкового номеру об'єкту
+		// за допомогою методу next();
 		id = classId*100+this.next();
-	
+		
 	}
 	
 	public double getPrice(){
@@ -20,8 +26,8 @@ public class Fruit extends Food {
 
 	public int getId()
 	{
-		// TODO: Implement this method
-		return 0;
+		System.out.println(this.id + " - " + this.name);
+		return this.id;
 	}
 
 
