@@ -15,6 +15,10 @@ public class Cellphone extends Technic {
 		return this.inPrice * this.margin * this.storageFee;
 	}
 
-
+	public int getId()
+	{
+		// TODO: Implement this method
+		return 0;
+	}
 
 }

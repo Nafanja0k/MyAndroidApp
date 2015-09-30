@@ -13,5 +13,10 @@ public class Vegetable extends Food {
 	public double getPrice(){
 		return this.inPrice * this.margin * this.shrinkage;
 	}
-
+	
+	public int getId()
+	{
+		// TODO: Implement this method
+		return 0;
+	}
 }
