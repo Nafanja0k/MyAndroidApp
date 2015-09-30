@@ -10,7 +10,6 @@ public class TV extends Technic {
 		super.Product(name,inPrice);
 	}
 
-
 	public int getId(){
 		System.out.println(this.id);
 		return this.id;

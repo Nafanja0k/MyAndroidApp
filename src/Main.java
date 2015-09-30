@@ -12,39 +12,30 @@ public class Main
 		// Заповнюємо список продуктів
 		FillProducts.fill(products);
 		
-		
-		System.out.println("Введіть");
-		System.out.println("1 - для продуктів");
-		System.out.println("2 - для техніки");
-		System.out.println("C - для перегляду кошика");
-		
+		ConsoleMenu.mainMenu();
 		
 		String inString;
 		Scanner sc = new Scanner(System.in);
 		inString = sc.next();
 		System.out.println(inString);
+		
+		
 			switch (inString.toLowerCase())
 			{
 				case "1": {
-					System.out.println("Введіть");
-					System.out.println("1 - для овочів");
-					System.out.println("2 - для фруктів");
-					System.out.println("E - повернутись");
+					ConsoleMenu.subProductsMenu();
+					break;
 					}
 				case "2": {
-					System.out.println("Введіть");
-					System.out.println("1 - для телевізорів");
-					System.out.println("2 - для телефонів");
-					System.out.println("E - повернутись");
+					ConsoleMenu.subTechnicsMenu();
+					break;
 					}
 				case "3": {
-					System.out.println("Вміст кошика:");
-						
-					// TODO 
-					// Вивести вміст поточного кошика
+					ConsoleMenu.cartMenu();
+					break;
 					}
-					
 			}
+		
 		//myCart.addToCart();
 
 
