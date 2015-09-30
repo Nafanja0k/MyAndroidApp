@@ -6,7 +6,7 @@ abstract public class Product
 	private String name;
 	// 
 	// націнка на товар (накопичується в підлеглих класах)
-	protected double margin = 1;
+	protected double margin = 1.0;
 	//унікальний номер товару для автоінкременту
 	static private int autoincrement = 0;
 	
@@ -16,7 +16,7 @@ abstract public class Product
 	};
 	
 	public double getInPrice(){
-		return this.inPrice * this.margin;
+		return this.inPrice;
 	}
 	
 	public double getPrice(){
