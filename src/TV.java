@@ -1,9 +1,9 @@
 public class TV extends Technic {
 
 	// націнка у зв’язку з усушкою/утряскою фруктів)
-	protected double storageFee = 1,01;
+	protected double storageFee = 1.01;
 	// номер групи/класу. Використовується для генерації номера товару
-	protected classId=1;
+	protected int classId=1;
 	
 	public TV() {
 		// TODO Auto-generated constructor stub

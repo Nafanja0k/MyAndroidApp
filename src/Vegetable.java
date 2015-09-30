@@ -2,11 +2,11 @@
 public class Vegetable extends Food {
 
 	// націнка у зв’язку з усушкою/утряскою фруктів)
-	protected double shrinkage = 1,02;
+	protected double shrinkage = 1.02;
 	// номер групи/класу. Використовується для генерації номера товару
-	protected classId=2;
+	protected int classId=2;
 	
-	public Veegtable() {
+	public void Vegetable() {
 		// TODO Auto-generated constructor stub
 	}
 	
