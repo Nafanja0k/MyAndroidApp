@@ -11,7 +11,6 @@ public class TV extends Technic {
 	}
 
 	public int getId(){
-		System.out.println(this.id);
 		return this.id;
 	}
 }

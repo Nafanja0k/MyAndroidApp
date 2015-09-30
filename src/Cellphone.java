@@ -12,7 +12,6 @@ public class Cellphone extends Technic {
 
 
 	public int getId(){
-		System.out.println(this.id);
 		return this.id;
 	}
 

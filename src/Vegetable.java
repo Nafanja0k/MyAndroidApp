@@ -17,7 +17,6 @@ public class Vegetable extends Food {
 
 	}
 	public int getId(){
-		System.out.println(this.id);
 		return this.id;
 	}
 }
