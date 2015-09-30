@@ -1,22 +1,23 @@
 
 public class Vegetable extends Food {
 
-	// націнка у зв’язку з усушкою/утряскою фруктів)
-	protected double shrinkage = 1.02;
 	// номер групи/класу. Використовується для генерації номера товару
 	protected int classId=2;
-	
-	public void Vegetable() {
-		// TODO Auto-generated constructor stub
+	// унікальний номер товару
+	private int id;
+
+	public Vegetable(String name, double inPrice) {
+		// хочу чтоб вызывался конструктор родительского класса
+		super.Product(name,inPrice);
+
+		// суперкласс  Product має статичну змінну 
+		// для підрахунку порядкового номеру об'єкту
+		// за допомогою методу next();
+		id = super.getClassId()*1000+classId*100+this.next();
+
 	}
-	
-	public double getPrice(){
-		return this.inPrice * this.margin * this.shrinkage;
-	}
-	
-	public int getId()
-	{
-		// TODO: Implement this method
-		return 0;
+	public int getId(){
+		System.out.println(this.id);
+		return this.id;
 	}
 }
