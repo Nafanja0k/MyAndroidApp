@@ -41,4 +41,5 @@ abstract public class Product
 	static public int next(){
 		return autoincrement++;
 	}
+	
 }

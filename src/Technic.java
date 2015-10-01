@@ -7,4 +7,5 @@ abstract public class Technic extends Product{
 	public int getClassId(){
 		return classId;
 	}
+	
 }

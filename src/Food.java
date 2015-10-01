@@ -7,6 +7,4 @@ abstract public class Food extends Product{
 		return classId;
 	}
 	
-	
-	
 }
