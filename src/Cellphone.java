@@ -1,7 +1,7 @@
 public class Cellphone extends Technic {
 
 	// номер групи/класу. Використовується для генерації номера товару
-	protected int classId=1;
+	protected int classId=2;
 	// унікальний номер товару
 	private int id;
 

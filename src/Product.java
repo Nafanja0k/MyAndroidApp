@@ -7,7 +7,7 @@ abstract public class Product
 	// 
 	// націнка на товар (накопичується в підлеглих класах)
 	protected double margin = 1.0;
-	//унікальний номер товару для автоінкременту
+	// лічильник для номеру товару для автоінкременту
 	static private int autoincrement = 0;
 	
 	public void Product(String name, double inPrice){
