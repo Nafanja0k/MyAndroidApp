@@ -4,13 +4,16 @@ abstract public class Product
 	private double inPrice;
 	// назва товару
 	private String name;
-	// 
+	// унікальний номер товару
+	private int id;
 	// націнка на товар (накопичується в підлеглих класах)
 	protected double margin = 1.0;
-	//унікальний номер товару для автоінкременту
+	// лічильник для номеру товару для автоінкременту
 	static private int autoincrement = 0;
 	
-	public void Product(String name, double inPrice){
+	
+	public void Product(int groupId, String name, double inPrice){
+		this.id = groupId+next();
 		this.name = name;
 		this.inPrice = inPrice;
 	};
@@ -30,9 +33,10 @@ abstract public class Product
 	public String getName(){
 		return name;
 	}
-	abstract public int getId();
-	
-	
+
+	public int getId(){
+		return this.id;
+	}
 	
 	static public int next(){
 		return autoincrement++;
