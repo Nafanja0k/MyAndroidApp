@@ -6,7 +6,7 @@ public class Cart
 
 	String name;
 	// В кошику є набір замовлень
-	List<Order> orders;
+	List<Order> orders = new ArrayList<Order>();
 	
 	public Cart(String name){
 		this.name = name;

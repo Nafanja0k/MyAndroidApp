@@ -24,8 +24,8 @@ public class ConsoleMenu
 					break;}
 				case "2": {ConsoleMenu.subTechnicsMenu(products, myCart);
 					break;}
-				//case "3": {ConsoleMenu.cartMenu();
-				//	break;}
+				case "c": {ConsoleMenu.cartMenu(myCart);
+					break;}
 				case "q": {quit = true;
 					break;}
 				default : System.out.println("Невірний ввід! повторіть спробу.");
@@ -131,7 +131,10 @@ public class ConsoleMenu
 	
 	static public void cartMenu(Cart myCart){
 		System.out.println("Вміст кошика:");
-		
+		for (Order item : myCart.orders) {
+			System.out.println(item.productId + " - " + item.price);
+			
+			}
 		// TODO вивести вміс кошика
 	}
 }
