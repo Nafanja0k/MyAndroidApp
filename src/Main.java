@@ -13,7 +13,7 @@ public class Main
 		// Заповнюємо список продуктів
 		FillProducts.fill(products);
 		
-		ConsoleMenu.mainMenu(products);
+		ConsoleMenu.mainMenu(products, myCart);
 		
 			
 		 

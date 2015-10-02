@@ -16,6 +16,9 @@ public class Cart
 	public void addToCart(int productId, double quantity, double price){
 		this.orders.add(new Order(productId, quantity, price));
 	}
+	public void addToCart(int productId, int quantity, double price){
+		this.orders.add(new Order(productId, quantity, price));
+	}
 	
 	public void removeFromCart(){
 		
